@@ -11,19 +11,46 @@ h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-we
 
 p { color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; }
 
+body { background: #ffdb74;  }
+#inner {
+  width: 50%;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
 </style>
+
 </head>
 
-<body>
-<center>
-<h1>AJ!</h1>
-<p>Bedankt voor al je jaren trouwe dienst.</p>
-<p>Je hebt veel gedaan en geleerd en dat gaat je nieuwe werkgever vast waarderen :)</p>
-<p>Je krijgt een dezer dagen een dinerbon thuisgestuurd zodat jij en Elin een avondje lekker kunnen tafelen.</p>
-<p>Nogmaals dank en namens het hele team heel veel succes in je toekomst!</p>
-<p>&nbsp;</p>
-<p>Henk Jan</p>
-</center>
+<body onload="conf()">
+
+<div id="outer">  
+  <div id="inner">
+    <h1>AJ!</h1>
+
+    <p>Bedankt voor al je jaren trouwe dienst.</p>
+    <p>Je hebt veel gedaan en geleerd en dat gaat je nieuwe werkgever vast waarderen :)</p>
+    <p>Je krijgt een dezer dagen een dinerbon thuisgestuurd zodat jij en Elin een avondje lekker kunnen tafelen.</p>
+    <p>Nogmaals dank en namens het hele team heel veel succes in je toekomst!</p>
+    <p>&nbsp;</p>
+    <p>Henk Jan</p>
+
+  </div>
+</div>
+
+
 </body>
 
 </html>
+
+<script type="text/javascript">
+function conf() {
+    if ( prompt('Raad de key') == '5JWJQBTvgC5Jc8t3Xuwdh23JHG23d7fk24f'){
+      alert('Correct haha (dat was niet zo moeilijk) :)')
+      document.getElementById('inner').style.visibility = 'visible'
+    } else
+    {
+      alert('Nope...')
+    }
+}
+</script>
